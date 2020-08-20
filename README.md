@@ -2,7 +2,7 @@
 Swift library which positions SwiftUI Views in UIKit
 
 
-### SwiftUI
+## SwiftUI
 ```swift
 struct StatsText: SwiftUI.View {
         var body: some SwiftUI.View {
@@ -18,7 +18,7 @@ struct StatsText: SwiftUI.View {
     addSwiftUI(StatsText(), top: 25, left: 18, w: 250, h: 44, clear: true)
 ```
 
-### UIKit
+## UIKit
 ```swift
 let label: UILabel = {
         let l = UILabel()
@@ -31,4 +31,21 @@ let label: UILabel = {
    label.pin(a: .top, b: .left, ac: 25, bc: 18, w: view.frame.width, h: 44, to: nil)
 ```
 
+
+## Examples
+
+### .pin
+```swift
+view.pin(a: .top, b: .center, ac: 200, bc: 0, w: 200, h: 30, to: nil)
+```
+
+### .bottomPin
+```swift
+map.bottomPin(top: 250, safe: false)
+```
+
+### .pinTo
+```swift
+view.pinTo(another, position: .bottom, h: 40, margin: 10)
+```
 
