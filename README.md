@@ -2,7 +2,7 @@
 Swift library which positions SwiftUI Views in UIKit
 
 
-SwiftUI
+### SwiftUI
 ```swift
 struct StatsText: SwiftUI.View {
         var body: some SwiftUI.View {
@@ -17,7 +17,7 @@ struct StatsText: SwiftUI.View {
     addSwiftUI(StatsText(), top: 25, left: 18, w: 250, h: 44, clear: true)
 ```
 
-UIKit
+### UIKit
 ```
 let label: UILabel = {
         let l = UILabel()
