@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/49wEe0fl.png" width="100"/>
 
 # Pin.swift
-Swift library which positions SwiftUI Views in UIKit
+Swift library which positions SwiftUI or UIKit views inside legacy UIKit apps
 
 
 ## SwiftUI
