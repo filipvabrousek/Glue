@@ -1,4 +1,4 @@
-# Glue.swift
+# Pin.swift
 Swift library which positions SwiftUI Views in UIKit
 
 
