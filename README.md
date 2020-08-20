@@ -14,6 +14,7 @@ struct StatsText: SwiftUI.View {
         }
     }
     
+    // in viewDidLoad()
     addSwiftUI(StatsText(), top: 25, left: 18, w: 250, h: 44, clear: true)
 ```
 
@@ -26,6 +27,7 @@ let label: UILabel = {
         return l
     }()
    
+   // in viewDidLoad()
    label.pin(a: .top, b: .left, ac: 25, bc: 18, w: view.frame.width, h: 44, to: nil)
 ```
 
