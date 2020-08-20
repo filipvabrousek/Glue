@@ -18,7 +18,7 @@ struct StatsText: SwiftUI.View {
 ```
 
 ### UIKit
-```
+```swift
 let label: UILabel = {
         let l = UILabel()
         l.text = "Stats"
