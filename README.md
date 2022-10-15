@@ -29,8 +29,13 @@ let label: UILabel = {
         return l
     }()
    
-   // in viewDidLoad()
-   label.pin(a: .top, b: .left, ac: 25, bc: 18, w: view.frame.width, h: 44, to: nil)
+   
+   
+   viewDidLoad(){
+         super.viewDidLoad();
+         view.addSubview(label) // Do not forget to add label as a subview to UIViewController, otherwise the app will crash! 
+         label.pin(a: .top, b: .left, ac: 25, bc: 18, w: view.frame.width, h: 44, to: nil)
+   }
 ```
 
 
