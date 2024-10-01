@@ -2,7 +2,7 @@
 
 # Pin.swift
 Swift library for positioning SwiftUI or UIKit views inside legacy UIKit apps
-
+```tx``` an ```ty``` mean translateX and translateY
 
 ## SwiftUI
 ```swift
@@ -34,7 +34,7 @@ let label: UILabel = {
    viewDidLoad(){
          super.viewDidLoad();
          view.addSubview(label) // Do not forget to add label as a subview to UIViewController, otherwise the app will crash! 
-         label.pin(a: .top, b: .left, ac: 25, bc: 18, w: view.frame.width, h: 44, to: nil)
+         label.pin(a: .top, b: .left, tx: 25, tx: 18, w: view.frame.width, h: 44, to: nil)
    }
 ```
 
