@@ -1,8 +1,8 @@
 <img src="https://i.imgur.com/49wEe0fl.png" width="100"/>
 
 # Pin.swift
-Swift library for positioning SwiftUI or UIKit views inside legacy UIKit apps
-```tx``` an ```ty``` mean translateX and translateY
+* Swift library for positioning SwiftUI or UIKit views inside legacy UIKit apps
+* ```tx``` an ```ty``` mean translateX and translateY
 
 ## SwiftUI
 ```swift
