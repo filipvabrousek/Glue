@@ -9,7 +9,7 @@ extension UIViewController {
         }
       
         view.addSubview(host.view)
-        host.view.pin(a: .top, b: .left, ac: top, bc: left, w: w, h: h, to: self.view)
+        host.view.pin(a: .top, b: .left, ty: top, tx: left, w: w, h: h, to: self.view)
     }
     
     func addSwiftUI<Content>(_ newView: Content, top: CGFloat, right: CGFloat, w: CGFloat, h: CGFloat, clear: Bool = false) where Content: SwiftUI.View {
@@ -18,7 +18,7 @@ extension UIViewController {
             host.view.backgroundColor = .clear
         }
             view.addSubview(host.view)
-            host.view.pin(a: .top, b: .right, ac: top, bc: right, w: w, h: h, to: self.view)
+            host.view.pin(a: .top, b: .right, ty: top, tx: right, w: w, h: h, to: self.view)
         }
 
     func addSwiftUI<Content>(_ newView: Content, top: CGFloat, middle: Bool, w: CGFloat, h: CGFloat, clear: Bool = false) where Content: SwiftUI.View {
@@ -28,7 +28,7 @@ extension UIViewController {
             host.view.backgroundColor = .clear
         }
             view.addSubview(host.view)
-            host.view.pin(a: .top, b: .middle, ac: top, bc: 0, w: w, h: h, to: self.view)
+            host.view.pin(a: .top, b: .middle, ty: top, tx: 0, w: w, h: h, to: self.view)
         }
 
     func addSwiftUI<Content>(_ newView: Content, top: CGFloat, center: Bool, w: CGFloat, h: CGFloat, clear: Bool = false) where Content: SwiftUI.View {
@@ -40,7 +40,7 @@ extension UIViewController {
             }
             
             view.addSubview(host.view)
-            host.view.pin(a: .top, b: .center, ac: top, bc: 0, w: w, h: h, to: self.view)
+            host.view.pin(a: .top, b: .center, ty: top, tx: 0, w: w, h: h, to: self.view)
         }
 
     func bottomPinSwiftUI<Content>(_ newView: Content, top: CGFloat, safe: Bool, clear: Bool = false) where Content: SwiftUI.View {
@@ -226,7 +226,7 @@ extension UIView {
         self.heightAnchor.constraint(equalToConstant: h).isActive = true
     }
     
-    func pin(a: P, b: O, ac: CGFloat, bc:CGFloat, w: CGFloat, h:CGFloat, to:UIView?){
+    func pin(a: P, b: O, ty: CGFloat, tx:CGFloat, w: CGFloat, h:CGFloat, to:UIView?){
         self.translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: w).isActive = true
         self.heightAnchor.constraint(equalToConstant: h).isActive = true
@@ -305,7 +305,7 @@ extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         let sup = within
         
-        let final = (contentWidth / self.frame.width) * self.frame.width
+        let final = (contentWidth / self.frame.width) * self.frame.width
         
         self.widthAnchor.constraint(equalToConstant: final).isActive = true
         
