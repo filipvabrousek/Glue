@@ -34,7 +34,7 @@ let label: UILabel = {
    viewDidLoad(){
          super.viewDidLoad();
          view.addSubview(label) // Do not forget to add label as a subview to UIViewController, otherwise the app will crash! 
-         label.pin(a: .top, b: .left, tx: 25, tx: 18, w: view.frame.width, h: 44, to: nil)
+         label.pin(a: .top, b: .left, tx: 25, ty: 18, w: view.frame.width, h: 44, to: nil)
    }
 ```
 
